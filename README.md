@@ -85,9 +85,9 @@ Este proyecto fue desarrollado para:
 
 🔮 **Posibles mejoras**
 
-- 💾 Integrar backend real (Node + Express)
+- 💾 Integrar backend real (Node o c#
 
-- 🗄️ Conectar a base de datos (MongoDB / SQL)
+- 🗄️ Conectar a base de datos (SQL)
 
 - 🔐 Agregar autenticación
 
