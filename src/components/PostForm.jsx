@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 function PostForm({ agregarPost }) {
   const [titulo, setTitulo] = useState("");
 

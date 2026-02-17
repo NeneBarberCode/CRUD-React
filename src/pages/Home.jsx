@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import PostList from "./components/PostList";
-import PostForm from "./components/PostForm";
-import { getPosts, createPost, deletePost } from "./services/postService";
+import PostList from "../components/PostList";
+import PostForm from "../components/PostForm";
+import { getPosts, createPost, deletePost } from "../services/postService";
 
-function PostApp() {
+function Home() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -33,6 +33,7 @@ function PostApp() {
 
       const data = await createPost(nuevoPost);
       setPosts((prev) => [data, ...prev]);
+      return data;
     } catch (err) {
       setError(err.message);
     }
@@ -59,4 +60,4 @@ function PostApp() {
   );
 }
 
-export default PostApp;
+export default Home;
