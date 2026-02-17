@@ -1,16 +1,106 @@
-# React + Vite
+📦 CRUD – React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación CRUD desarrollada con **React + Vite**, que consume la API pública:
 
-Currently, two official plugins are available:
+https://jsonplaceholder.typicode.com/posts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+⚠️ **Importante**: Esta API es solo para pruebas.
+Los datos **NO** se guardan realmente en el servidor.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📌 **Descripción**
 
-## Expanding the ESLint configuration
+Este proyecto implementa las operaciones básicas de un CRUD:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ➕ **Crear** posts
+
+- 📄 **Leer** lista de posts
+
+- ✏️ **Actualizar** posts
+
+- 🗑️ **Eliminar** posts
+
+La aplicación consume la API pública de **JSONPlaceholder**, ideal para practicar peticiones HTTP sin necesidad de un backend propio.
+
+⚠️ **Importante sobre la API**
+
+La API utilizada:
+
+👉 https://jsonplaceholder.typicode.com/
+
+Es una **API fake / mock** para pruebas.
+
+❗ **Esto significa que**:
+
+Los datos NO se guardan realmente
+
+- Si creas un post → solo simula la creación
+
+- Si editas un post → no se actualiza en el servidor
+
+- Si eliminas un post → no se borra realmente
+
+- Al recargar la página → todo vuelve al estado original
+
+✔️ Las operaciones funcionan solo a nivel de respuesta HTTP simulada.
+
+🛠️ **Tecnologías utilizadas**
+
+- ⚛️ **React**
+
+- ⚡ **Vite**
+
+- 🌐 **Fetch API** 
+
+**Cómo ejecutar el proyecto**
+1️⃣ Clonar repositorio
+git clone https://github.com/tu-usuario/crud-react-vite.git
+
+2️⃣ Instalar dependencias
+npm install
+
+3️⃣ Ejecutar servidor de desarrollo
+npm run dev
+
+
+Abrir en el navegador:
+
+http://localhost:5173
+
+
+
+🧠 **Objetivo del proyecto**
+
+Este proyecto fue desarrollado para:
+
+- Practicar consumo de APIs
+
+- Entender el flujo de un CRUD en React
+
+- Manejar estados con useState
+
+- Usar useEffect para peticiones HTTP
+
+- Comprender cómo funcionan las APIs REST
+
+🔮 **Posibles mejoras**
+
+- 💾 Integrar backend real (Node + Express)
+
+- 🗄️ Conectar a base de datos (MongoDB / SQL)
+
+- 🔐 Agregar autenticación
+
+- 📄 Paginación real
+
+- 🔍 Buscador dinámico
+
+👨‍💻 **Autor**
+
+Desarrollado por **[Jose Guillermo]**
+
+📧 Email: darlinguillermo@gmail.com
+👨‍💻 Autor
+
+Desarrollado por **[Jor Guillermo]**
+Email
